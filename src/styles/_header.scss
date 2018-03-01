@@ -1,0 +1,39 @@
+.site-header {
+    background: #f8f8f8;
+    padding: 1rem 0;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.8rem;
+    a {
+        color: #333;
+    }
+}
+
+.site-nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    > li {
+        display: inline-block;
+        margin: 0;
+        > a {
+            display: inline-block;
+            padding: 0.5rem 0.8rem;
+            color: #333;
+            font-weight: 700;
+
+            &:hover, &:focus {
+                color: $primary;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .site-nav > ul {
+        text-align: right;
+    }
+}

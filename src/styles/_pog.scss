@@ -1,0 +1,43 @@
+
+.pog {
+    border-radius: 50%;
+}
+
+.pog.pog--large {
+    display: none;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    border: 7px solid #eee;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+}
+
+.pog.pog--alt {
+    // max-width: 180px;
+    background: #fff;
+    border: 7px solid #eee;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+}
+
+.coin--animation {
+    animation: spinY 4s infinite;
+    animation-timing-function: linear;
+}
+
+.coin__container--center {
+    margin: 0 auto;
+}
+
+@include media-breakpoint-up(md) {
+    .pog.pog--large {
+        display: block;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .pog.pog--large {
+        width: 240px;
+        height: 240px;
+    }
+}
